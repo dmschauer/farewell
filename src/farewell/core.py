@@ -1,18 +1,3 @@
-"""
-script_notifier.py - Simple script exit notifications
-
-Usage:
-    import script_notifier
-    
-    def on_success():
-        print("Script completed successfully!")
-        
-    def on_error(error_info):
-        print(f"Script failed: {error_info}")
-    
-    script_notifier.on_exit(on_success, on_error)
-"""
-
 import atexit
 import sys
 import traceback
