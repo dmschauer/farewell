@@ -24,6 +24,10 @@ The intended use case is sending notifications in case of succesful/failed job r
 pip install farewell
 ```
 
+```python
+uv add farewell
+```
+
 ## Quick examples
 
 ### Basic usage
