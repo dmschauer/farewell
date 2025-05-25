@@ -44,7 +44,7 @@ def on_error(error):
 on_exit(success_func=on_success,
         error_func=on_error)
 
-# You actual script logic below - completely unchanged!
+# Your actual script logic below - completely unchanged!
 print("Script running...")
 
 # Uncomment to test error:
@@ -99,7 +99,7 @@ def notify_error(err):
 on_exit(succes_func=notify_success,
         error_func=notify_error)
 
-# You actual script logic below - completely unchanged!
+# Your actual script logic below - completely unchanged!
 ```
 
 ## Alternatives
