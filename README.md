@@ -112,14 +112,14 @@ Although making this library was a nice excercise, I would recommend you to simp
 def success_notification():
     print("✅ Everything worked!")
 
-def error_notification(error):
-    print(f"❌ Failed: {error['type']} - {error['message']}")
+def error_notification(error: Exception):
+    print(f"❌ Failed: {type(error).__name__} - {str(error)}")
 
 def main():
     print("Script running...")
     
     # Uncomment to test error:
-    # raise ValueError("Test error!")
+    raise ValueError("Test error!")
     
     print("Script finished!")
 
@@ -129,4 +129,5 @@ if __name__ == "__main__":
         success_notification()
     except Exception as e:
         error_notification(e)
+
 ```
