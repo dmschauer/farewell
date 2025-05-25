@@ -106,7 +106,7 @@ on_exit(succes_func=notify_success,
 
 The following achieves the same but doesn't introduce a new dependency.
 
-Although making this library was a nice excercise, I would recommend you to simply do this:
+Although making this library was a nice excercise, I would recommend you to simply do this instead:
 
 ```python
 def success_notification():
@@ -119,7 +119,7 @@ def main():
     print("Script running...")
     
     # Uncomment to test error:
-    raise ValueError("Test error!")
+    # raise ValueError("Test error!")
     
     print("Script finished!")
 
