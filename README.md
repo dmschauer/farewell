@@ -1,17 +1,22 @@
 # Farewell
 
-<div style="display: flex; align-items: center; justify-content: center;">
-    <a href="https://dmschauer.github.io/farewell" style="margin-right: 20px;">
-        <img src="img/farewell_icon_white_border.png" style="width: 100px;" alt="Farewell logo"/>
+<p align="center">
+    <a href="https://dmschauer.github.io/farewell">
+        <img src="img/farewell_icon_white_border.png" style="padding: 0px 10px; width: 100px;"/>
     </a>
-    <em style="font-size: 1.1em;">
-        Simple, unobtrusive script exit notifications.
+</p>
+<p align="center">
+    <em>
+    Simple, unobtrusive script exit notifications.
     </em>
-</div>
+</p>
 
-`Farewell` is a basic utility package. It calls a custom function on succesful script exits and another custom function in case of any error. It is similar to wrapping everything into a `try/except` block, but without the need to change your script logic or indent your code.
+## Intro
+
+`Farewell` is a basic utility package. It lets you define two functions and calls either one in case of success/failure of the script run.
 
 The intended use case is sending notifications in case of succesful/failed job runs.
+
 
 ## Installation
 
