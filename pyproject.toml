@@ -1,10 +1,10 @@
 [project]
 name = "farewell"
 version = "0.1.0"
-description = "Execute custom code on programm exit, differentiated by success or failure"
+description = "Simple, unobtrusive script exit notifications."
 readme = "README.md"
 requires-python = ">=3.9,<4.0"
-dependencies = [
+classifiers = [
     "Intended Audience :: Developers",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -27,3 +27,8 @@ build-backend = "flit_core.buildapi"
 name = "pypi"
 url = "https://pypi.org/simple/"
 publish-url = "https://pypi.org/legacy/"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
