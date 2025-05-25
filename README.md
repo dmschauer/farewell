@@ -101,3 +101,32 @@ on_exit(succes_func=notify_success,
 
 # You actual script logic below - completely unchanged!
 ```
+
+## Alternatives
+
+The following achieves the same but doesn't introduce a new dependency.
+
+Although making this library was a nice excercise, I would recommend you to simply do this:
+
+```python
+def success_notification():
+    print("✅ Everything worked!")
+
+def error_notification(error):
+    print(f"❌ Failed: {error['type']} - {error['message']}")
+
+def main():
+    print("Script running...")
+    
+    # Uncomment to test error:
+    # raise ValueError("Test error!")
+    
+    print("Script finished!")
+
+if __name__ == "__main__":
+    try:
+        main()
+        success_notification()
+    except Exception as e:
+        error_notification(e)
+```
